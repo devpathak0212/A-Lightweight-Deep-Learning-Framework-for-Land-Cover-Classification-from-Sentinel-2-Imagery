@@ -22,7 +22,7 @@ The **EuroSAT dataset** is derived from Sentinel-2 multispectral imagery provide
 
 The 10 land cover classes are: Annual Crop, Forest, Herbaceous Vegetation, Highway, Industrial, Pasture, Permanent Crop, Residential, River, and Sea Lake.
 
-![Dataset Classes](dataset_classes.jpg)
+![Dataset Classes](images/dataset_classes.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ The framework uses **DenseNet121** as the base pre-trained feature extractor, wi
 
 Training was conducted for **100 epochs** with a batch size of 32, an initial learning rate of 0.001, using **Adam** as the optimizer and **categorical cross-entropy** as the loss function. All images were resized to 64×64 pixels before being fed into the network.
 
-![Model Architecture](architecture.jpg)
+![Model Architecture](images/architecture.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ DenseNet121 was benchmarked against ResNet50 and EfficientNetB2 under identical 
 
 DenseNet121 achieved the highest classification accuracy and precision while maintaining a compact model size of 53.5 MB — less than half the size of ResNet50 at 105.4 MB. The training and validation accuracy curves converge smoothly, indicating stable training without significant overfitting.
 
-![Results](results.jpg)
+![Results](images/results.jpg)
 
 ---
 
